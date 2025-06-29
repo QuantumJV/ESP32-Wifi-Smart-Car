@@ -107,5 +107,10 @@ B.Tech Computer Science
 
 Open-source for educational use. Attribution appreciated 😊
 
----
+[MIT License](LICENSE)
 
+Let me know if you'd like to:
+
+- Add setup GIFs or extra screenshots  
+- Include platform badges (ESP8266, Arduino IDE, MIT License, etc.)  
+- Convert this for GitHub Pages or documentation site integration
