@@ -93,5 +93,19 @@ Install these libraries from Arduino Library Manager:
 
 ---
 
-## 📦 Folder Structure
+
+---
+
+## 🧑‍💻 Author
+
+**Jaival Soni**  
+B.Tech Computer Science  
+
+---
+
+## 📢 License
+
+Open-source for educational use. Attribution appreciated 😊
+
+---
 
