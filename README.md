@@ -113,7 +113,7 @@ Install these libraries from Arduino Library Manager:
 ## 🧑‍💻 Author
 
 **Jaival Soni**  
-B.Tech Computer Science  
+B.Tech Computer Science  Engineering
 
 ---
 
