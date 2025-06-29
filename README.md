@@ -48,6 +48,20 @@ A feature-rich IoT-based RC car using the ESP32 microcontroller. This project al
 | LED 1          | GPIO 12     |                                   |
 | LED 2          | GPIO 13     |                                   |
 
+### VCC and GND Wiring
+
+| Component              | VCC Connection       | GND Connection        | Notes                                      |
+|------------------------|----------------------|------------------------|--------------------------------------------|
+| ESP32 Board            | 3.3V Regulator Output| Common Ground          | ESP32 runs on 3.3V                         |
+| LED Matrix Display     | 5V Regulator Output  | Common Ground          | MAX7219 module requires 5V                 |
+| Ultrasonic Sensor (HC-SR04) | 5V Regulator Output  | Common Ground      | Use voltage divider on ECHO to 3.3V logic  |
+| Buzzer (Passive 3-pin) | 5V Regulator Output  | Common Ground          | VCC and GND used; signal to GPIO14         |
+| L293D Motor Driver     | External Motor Power | Common Ground          | Separate 6–9V motor supply recommended      |
+| LEDs (Indicators)      | Via GPIO Pull-Up     | Common Ground          | Driven directly from ESP32 GPIO            |
+
+> ⚠️ **Important:** Connect **all GNDs together** (ESP32, regulators, sensors, motor driver) to maintain a common ground reference.  
+> ✅ Use **AMS1117-3.3V** to power ESP32 and **AMS1117-5V** (or other 5V step-down) for display/sensors.
+
 **Note:**
 - Supply ESP32 with **3.3V regulated** from AMS1117 or USB.
 - Use **external 6V–9V battery** to power motors.
